@@ -430,10 +430,29 @@
               }
               h3 {
                 position: relative;
-                top: 200px;
+                top: 350px;
                 text-align: center;
                 color: black;
-                font-size: 2.5em;
+                font-size: 2em;
               }
+
+ /*media */
+ @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+
+    /* media query*/
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
    
         
